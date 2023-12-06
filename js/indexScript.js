@@ -31,5 +31,5 @@ document.getElementById("geothermalEnergy").innerHTML = "<dt>GEOTHERMAL ENERGY:<
 document.getElementById("hydroPower").innerHTML = "<dt>HYDROPOWER:</dt> <dd>Hydropower harnesses the energy of water moving from higher to lower elevations. It can be generated from reservoirs and rivers.</dd> <br>Reference link: https://www.un.org/en/climatechange/what-is-renewable-energy"
 
 function changeText() {
-    document.getElementById("thisDiv").innerHTML = "<h3>Renewable energy is energy derived from natural sources that are replenished at <br> a higher rate than they are consumed. Sunlight and wind, for example, are such <br> sources that are constantly being replenished. Renewable energy sources are <br> plentiful and all around us. <br><br> Reference link: https://www.un.org/en/climatechange/what-is-renewable-energy </h3>";
+    document.getElementById("contentDiv").innerHTML = "<h3>Renewable energy is energy derived from natural sources that are replenished at <br> a higher rate than they are consumed. Sunlight and wind, for example, are such <br> sources that are constantly being replenished. Renewable energy sources are <br> plentiful and all around us. <br><br> Reference link: https://www.un.org/en/climatechange/what-is-renewable-energy </h3>";
 }
