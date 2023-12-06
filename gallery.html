@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Webpage Metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of Webpage -->
+    <title>Sustainability</title>
+
+    <!-- Google Fonts or FontAwesome Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://kit.fontawesome.com/ae7fdd49d8.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- External JavaScript Links -->
+    <script defer src="js/galleryScript.js"></script>
+
+    <!-- External CSS Links -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body onload="blockDivs();">
+
+    <!-- Webpage Header/NavBar (Copy to all html pages) -->
+    
+    <nav class="navbar navbar-expand-lg" class="navbar navbar-light">
+        <div class="container-fluid">
+            <i class="fa-solid fa-earth-americas fa-2xl"></i>
+            <a class="navbar-brand" href="index.html">Sustainability Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="solar.html">Solar Power</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="miniGames.html">Mini Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="contact.html">Contact Us</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <button onclick="bringToTop()" id="topBtn" title="topBtn">
+        <i class="fa-regular fa-circle-up fa-lg"></i>
+    </button>
+
+    <div id="logoDiv">
+        <img height ="200" width="300px" src="images/earth.jpg" alt="poster about earth">
+        <img id="image" height ="200" width="300px" src="images/planetearth.jpg" alt="painting of earth ">
+        <br>
+        <h1 class="font-effect-fire">Sustainability</h1>
+    </div>
+
+    
+    <!-- Webpage Content -->
+    <h1 id="galleryTitle">Gallery</h1>
+
+    <div class="contentDiv">
+
+        <div id="carouselDiv">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/green1.jpg" class="d-block w-100" alt="green1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/eScooter1.jpg" class="d-block w-100" alt="eScooter1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/hydro1.jpg" class="d-block w-100" alt="hydro1">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5></h5>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <br><hr>
+
+        <div id="galleryButtons">
+            <button onclick="energyBtn();" class="webBtn">ENERGY</button>
+
+            <button onclick="pollutionBtn();" class="webBtn">POLLUTION</button>
+
+            <button onclick="solutionBtn();" class="webBtn">SOLUTIONS</button>
+        </div>
+
+        <hr>
+
+        <div id="energyDiv">
+            <div class="container-fluid">
+
+                <br>
+
+                <h3 class="imgTitle">Sources of Renewable Energy</h3>
+
+                <br>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img" src="images/solar1.jpg" alt="solar1">
+                        </td>
+                        <td>
+                            <img class="img" src="images/hydro2.jpg" alt="hydro2">
+                        </td>
+                        <td>
+                            <img class="img" src="images/wind1.jpg" alt="wind1">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="img" src="images/thermal1.jpg" alt="thermal1">
+                        </td>
+                        <td>
+                            <img class="img" src="images/wind2.jpg" alt="wind2">
+                        </td>
+                        <td>
+                            <img class="img" src="images/solar2.jpg" alt="solar2">
+                        </td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+        
+        <div id="pollutionDiv">
+            <div class="container-fluid">
+
+                <h3 class="imgTitle">Negative Impacts of Pollution Around the World</h3>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img" src="images/pollution2.jpg" alt="pollution2">
+                        </td>
+                        <td>
+                            <img class="img" src="images/wildfire1.jpg" alt="wildfire1">
+                        </td>
+                        <td>
+                            <img class="img" src="images/pollution3.jpg" alt="pollution3">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="img" src="images/pollution1.jpg" alt="pollution1">
+                        </td>
+                        <td>
+                            <img class="img" src="images/pollution4.jpg" alt="pollution4">
+                        </td>
+                        <td>
+                            <img class="img" src="images/deforestation1.jpg" alt="deforestation1">
+                        </td>
+                    </tr>
+                </table> 
+            </div>
+        </div> 
+
+        <div id="solutionDiv">
+            <div class="container-fluid">
+
+                <h3 class="imgTitle">Sustainable Solutions</h3>
+
+                <table>
+                    <tr>
+                        <td>
+                            <img class="img" src="images/recycle1.jpg" alt="recycle1">
+                        </td>
+                        <td>
+                            <img class="img" src="images/eCar1.jpg" alt="eCar1">
+                        </td>
+                        <td>
+                            <img class="img" src="images/eScooter2.jpg" alt="eScooter2">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img class="img" src="images/eCar2.jpg" alt="eCar2">
+                        </td>
+                        <td>
+                            <img class="img" src="images/recycle2.jpg" alt="recycle2">
+                        </td>
+                        <td>
+                            <img class="img" src="images/eBike1.jpg" alt="eBike1">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div> 
+    
+    </div>
+
+    <!-- Webpage Footer (Copy to all html pages) -->
+
+    <footer class="text-center text-white">
+        <div class="container pt-4">
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fa-brands fa-facebook fa-lg"></i>
+                </a>
+                <!-- X -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fa-brands fa-x-twitter fa-lg"></i>
+                </a>        
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button" data-mdb-ripple-color="dark">
+                    <i class="fa-brands fa-instagram fa-lg"></i>
+                </a>       
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark">
+                    <i class="fa-brands fa-linkedin fa-lg"></i>
+                </a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="" role="button" data-mdb-ripple-color="dark">
+                    <i class="fa-brands fa-github fa-lg"></i>
+                </a>
+            </section>
+        </div>
+        <div class="text-center text-dark p-3">
+            <div class="rows">
+                <select>
+                    <option>Choose Country</option>
+                    <option>Ireland</option>
+                    <option>Greece</option>
+                    <option>UK</option>
+                    <option>France</option>
+                    <option>Spain</option>
+                </select>
+            </div>
+            <br>
+            <p>&copy; All rights reserved U.S.M</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
