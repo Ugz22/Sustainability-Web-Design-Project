@@ -89,6 +89,14 @@ body{
 }
 
 /* CSS FOR HOMEPAGE/INDEX & SOLAR PAGE */
+#thisDiv{
+    background-color: #89E894;
+    border: 5px solid #6ca5c8;
+    margin: 20px;
+    padding: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 img{
     float: left;
