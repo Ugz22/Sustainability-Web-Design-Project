@@ -19,3 +19,12 @@ function bringToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 } //Different properties required for browser types
+
+
+let send = document.querySelector("#send");
+send.addEventListener("click", function() {
+let selectedCheckboxes = document.querySelectorAll(".courses input[type=checkbox]:checked");
+selectedCheckboxes.forEach(function(item) {
+item.parentElement.style.display = "none";
+    });
+});
