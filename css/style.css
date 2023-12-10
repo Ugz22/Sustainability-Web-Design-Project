@@ -123,7 +123,7 @@ img{
 .font-effect-fire{
     font-family: "Sofia", sans-serif;
     font-size: 60px;
-    text-shadow: 8px 4px 3px #ababab;
+    text-shadow: 8px 4px 3px #94FA92;
     background-color: #6ca5c8;
 }
 
@@ -305,7 +305,7 @@ on screens less than 500 pixels
 #galleryTitle{
     font-family: "Sofia", sans-serif;
     font-size: 60px;
-    text-shadow: 8px 4px 3px #ababab;
+    text-shadow: 8px 4px 3px #94FA92;
     background-color: #6ca5c8;
     margin-top: 20px;
     text-align: center;
