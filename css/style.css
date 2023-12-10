@@ -63,6 +63,11 @@ body{
     margin: 10px;
 }
 
+.logoImg{
+    border: 5px solid #6ca5c8;
+    border-radius: 25px;
+}
+
 .text-center.text-white{
     background-color: #6ca5c8;
 }
@@ -114,12 +119,6 @@ img{
     padding-top: 100px;
 }
 
-/*  */
-.rows{
-    text-align: center;
-}  
-
-/*  */
 .font-effect-fire{
     font-family: "Sofia", sans-serif;
     font-size: 60px;
@@ -127,7 +126,6 @@ img{
     background-color: #6ca5c8;
 }
 
-/*  */
 .font-effect-outline{
     font-weight: bold;
     text-shadow: 2px 2px 8px #0095ff;
@@ -138,14 +136,11 @@ img{
     text-shadow: 2px 2px 8px #0095ff;
 } 
 
-/*  */
 .font-effect-outline{
     font-weight: bold;
     text-shadow: 2px 2px 8px #0095ff;
 }
 
-
-/*  */
 .imgSticky{
     position: -webkit-sticky;
     position: sticky;
@@ -154,7 +149,6 @@ img{
     border: 5px solid #6ca5c8;
 }
 
-/*  */
 .colour{
     background-color: #89E894;
     color: black;
@@ -163,7 +157,6 @@ img{
     text-align: center;
 }
 
-/*  */
 #colour{
     background-color: #89E894;
     color: black;
@@ -182,15 +175,6 @@ img{
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
-  
-/* Add responsiveness - will automatically display the navbar vertically instead of horizontally 
-on screens less than 500 pixels
-@media screen and (max-width: 600px) {
-.navbar a {
-      float: none;
-      display: block;
-    }
-} */
 
 .courses {
     margin-bottom: 45px; /* for spacing only */
