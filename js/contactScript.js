@@ -28,13 +28,19 @@ function sendButton() {
 
     var lName = document.getElementById("lName").value;
 
-   //var email = document.getElementById("email").value;
+    var email = document.getElementById("email").value;
 
     var message = document.getElementById("comment").value;
 
-    var fullName = (title + " " + fName + " " + lName);
+    if (fName == "" || lName == "" || email == "") {
+        
+        alert ("Please fill in all the required fields");
 
+        return false;
+    }
     event.preventDefault();
+
+    var fullName = (title + " " + fName + " " + lName);
 
     var formMessage = "Hello " + fullName + " your message has been sent" + "<br><br> Thank you for your feedback" + "<br><br> Your Message: " + message
 
