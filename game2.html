@@ -78,7 +78,19 @@
     <h1 id="galleryTitle">MiniGames</h1>
 
     <div class="contentDiv">
-        <h1>Sustainability Quiz!!!</h1>
+        <h1>Trivia Game</h1>
+
+        <p>This game is a trivia that will test your knowledge in some pretty simple questions. Anwser all the questions to complete the game.</p>
+
+        <br>
+
+        <p>Please click on the 'Play' button when you're ready.</p>
+
+        <br>
+
+        <div>
+            <img src="https://i.imgur.com/ltL5Xoj_d.webp?maxwidth=760&fidelity=grand" alt="trivia questions" width="350" height="350">
+        </div>
 
         <img src="https://i.imgur.com/Moq0meh_d.webp?maxwidth=760&fidelity=grand" alt="Play button" width="180" height="180" onclick="startGame()">
     </div>
@@ -126,57 +138,6 @@
             <p>&copy; All rights reserved U.S.M</p>
         </div>
     </footer>
-
-<!--    <script>
-                var gamequest = {
-            q1: {
-                quest: "What is a sustainable source of energy?",
-                opt: ["Coal", "Electricity", "Water", "Wind"],
-                concluder: "Wind"
-            },
-            q2: {
-                quest: "Which one of these materials is recyclable?",
-                opt: ["Styrofoam", "Bubble Wrap", "Cardboard", "Plastic"],
-                concluder: "Plastic"
-            },
-            q3: {
-                quest: "TRUE OR FALSE: Climate change can really affect the Earth relating to things like tides, temperature, and the atmosphere.",
-                opt: ["True", "False"],
-                concluder: "True"
-            },
-            q4: {
-                quest: "Sustainable resources help to keep the environment clean and healthy. Which one of these is a sustainable resource?",
-                opt: ["Fossil Fuels", "Nuclear Energy", "Solar Energy", "Human Sacrifice"],
-                concluder: "Solar Energy"
-            },
-            
-            // Can add more questions by saying q and then a number after it
-        };
-
-        var currentQuestionIndex = 1; // Starting with the first question
-
-        function startGame() {
-            if (currentQuestionIndex <= Object.keys(gamequest).length) {
-                var currentQuestion = gamequest["q" + currentQuestionIndex];
-                var userAnswer = prompt(currentQuestion.quest + "\nOptions: " + currentQuestion.opt.join(", "));
-
-                if (userAnswer !== null) {
-                    if (userAnswer.toLowerCase() === currentQuestion.concluder.toLowerCase()) {
-                        alert("Correct!");
-                        currentQuestionIndex++;
-                        startGame(); // Move to the next question
-                    } else {
-                        alert("Wrong! The correct answer is: " + currentQuestion.concluder);
-                        // You can handle what happens when the answer is wrong
-                    }
-                }
-            } else {
-                alert("You completed the game! Thank you!");
-            }
-        }
-
-    </script> -->
-
-</body>
     
+</body>
 </html>
